@@ -1,0 +1,38 @@
+   <!DOCTYPE html>
+
+    <html>
+        
+     <head>
+        <title>Desafio 19</title>
+        <meta charset="utf-8">
+        <input/>
+        <button>Em que ano foi criado o primeiro notebook do mundo?</button>
+      </head>
+        <script>
+            var segredo = 1982;
+        
+            var input = document.querySelector("input");
+                input.focus();
+        
+            function verifica() {
+        
+                if(input.value == segredo) {
+        
+                alert("Você ACERTOU!");
+                } else {
+        
+                alert("Você ERROU! Tente novamente.");
+                }
+        
+                        input.value = "";
+                        input.focus();
+        
+            }
+    
+            var button = document.querySelector("button");
+        
+            button.onclick = verifica;
+        
+        </script>
+        
+    </html>
